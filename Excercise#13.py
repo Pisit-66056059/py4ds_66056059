@@ -42,6 +42,7 @@ def median(list_data):
     elif list_data.__len__() % 2 == 0:
         index = list_data.__len__()//2
         return int(list_data[index])
+    print(index)
     else:
         index = index = list_data.__len__()//2
         return int(list_data[index])
