@@ -41,6 +41,21 @@ def calulateMedian(list_data):
         return (list_data[index] + list_data[index-1])/2
 
 
+def calculateMode(list_data):
+    mode_count = 0
+    number = 0
+
+    if list_data.__len__() == 0:
+        return 'None'
+    else:
+        for x in list_data:
+            count = list_data.count(x)
+            if count > mode_count:
+                mode_count = count
+                number = x
+    return number
+
+
 if __name__ == '__main__':
     print(calculateSum([]) == 0)
     print(calculateSum([2,4,6,8,10]) == 30)
@@ -55,4 +70,7 @@ if __name__ == '__main__':
     print(calulateMedian([1,2,3]) == 2)
     print(calulateMedian([3,7,10,4,1,9,6,5,2,8]) == 5.5)
     print(calulateMedian([3,7,10,4,1,9,6,2,8]) == 6)
+    print(calculateMode([]) == 'None')
+    print(calculateMode([1,2,3,4,4]) == 4)
+    print(calculateMode([1,1,2,3,4]) == 1)
 
