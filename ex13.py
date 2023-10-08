@@ -44,7 +44,6 @@ def calulateMedian(list_data):
 def calculateMode(list_data):
     mode_count = 0
     number = 0
-
     if list_data.__len__() == 0:
         return 'None'
     else:
