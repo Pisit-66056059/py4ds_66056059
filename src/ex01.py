@@ -1,5 +1,5 @@
 """
-Execise 1
+Exercise 1
 """
 
 
@@ -22,7 +22,8 @@ def know_my_name():
         str: The name entered by the user.
     """
     # Fix : complete this
-    return 'Worajedt'
+    name = input('Enter your name:')
+    return name
 
 
 def say_hi(name=None):
@@ -33,5 +34,7 @@ def say_hi(name=None):
         name (str, optional): The name to greet. Defaults to None.
     """
     # Fix : complete this
-    print('สวัสดีคุณ'+name)
-    pass
+    print(f'สวัสวดีคุณ{name}')
+
+# if __name__ == '__main__':
+#     print(know_my_name())
