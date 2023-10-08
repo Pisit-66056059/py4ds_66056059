@@ -13,8 +13,11 @@ def is_odd(num):
     Returns:
         bool: True if the number is odd, False otherwise.
     """
-    # TODO : complete this
-    pass
+    # Fix : complete this
+    if num %2 == 1:
+        return True
+    else:
+        return False
 
 
 def is_even(num):
@@ -27,5 +30,8 @@ def is_even(num):
     Returns:
         bool: True if the number is even, False otherwise.
     """
-    # TODO : complete this
-    pass
+    # Fix : complete this
+    if num % 2 == 0:
+        return True
+    else:
+        return False
