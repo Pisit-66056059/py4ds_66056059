@@ -8,7 +8,7 @@ def test_greeting(capsys):
 
 
 def test_know_my_name(monkeypatch):
-    monkeypatch.setattr('builtins.input', lambda _: "Worajedt")
+    monkeypatch.setattr('builtins.input', lambda _: "Worajedt") #Set default name = Worajedt
     result = know_my_name()
     assert result == 'Worajedt'
 
