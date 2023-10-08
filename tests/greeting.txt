@@ -1,2 +1,2 @@
-Hello
-World!
+write to current file
+append to current file
