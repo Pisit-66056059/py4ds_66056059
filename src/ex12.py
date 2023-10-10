@@ -13,6 +13,7 @@ def get_smallest(num_list):
     Returns:
         int or None: The smallest number from the list. If the list is empty, returns None.
     """
+
     if num_list.__len__() == 0:
         return None
     else:
