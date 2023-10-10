@@ -14,4 +14,12 @@ def average(num_list: list) -> float:
     - float: The average of the numbers in the list.
       If the list is empty, returns 0.
     """
-    pass
+    total = 0
+    if num_list.__len__() == 0:
+        return None
+    else:
+        for x in num_list:
+            total = total + x
+    return total/num_list.__len__()
+
+
