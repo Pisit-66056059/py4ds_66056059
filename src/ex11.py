@@ -22,25 +22,18 @@ def get_hr_min_sec(tsec):
         >>> get_hr_min_sec(0)
         '0s'
     """
-    thr = int(tsec/3600)
-    tsec = tsec - (thr*3600)
-    tmin = int(tsec / 60)
-    tsec = tsec -(tmin * 60)
-    if thr == 0:
-        if tmin == 0:
-            return f'{tsec}s'
-        elif tsec !=0:
-            return f'{tmin}m {tsec}s'
-        else:
-            return f'{tmin}m'
+    time = []
+    if tsec == 0:
+        return '0s'
     else:
-        if tmin == 0 and tsec == 0:
-            return f'{thr}h'
-        elif tmin != 0 and tsec == 0:
-            return f'{thr}h {tmin}m'
-        elif tmin == 0 and tsec != 0:
-            return f'{thr}h {tsec}s'
-        else:
-            return f'{thr}h {tmin}m {tsec}s'
-
-
+        thr = tsec // 3600
+        if thr > 0:
+            time.append(f'{thr}h')
+        tsec = tsec - (thr * 3600)
+        tmin = tsec // 60
+        if tmin > 0:
+            time.append(f'{tmin}m')
+        tsec = tsec - (tmin * 60)
+        if tsec > 0:
+            time.append(f'{tsec}s')
+    return ' '.join(time)
