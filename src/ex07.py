@@ -3,7 +3,7 @@ Exercise 7
 """
 
 
-def print_ASCII_table(start_char,end_char):
+def print_ASCII_table(start_char, end_char):
     """
     Generate and print the ASCII table for a range of characters.
 
@@ -16,5 +16,5 @@ def print_ASCII_table(start_char,end_char):
 
     """
     # fix : complete this
-    for x in range(start_char,end_char+1):
+    for x in range(start_char, end_char + 1):
         print(chr(x))
