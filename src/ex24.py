@@ -17,7 +17,7 @@ def get_time_every_15_min():
         str: The generated time string.
     """
     # Fix : complete this
-    for meridian in ['am','pm']:
-        for hour in ['12','1','2','3','4','5','6','7','8','9','10','11']:
-            for min in ['00','15','30','45']:
+    for meridian in ['am', 'pm']:
+        for hour in ['12', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11']:
+            for min in ['00', '15', '30', '45']:
                 print(f'{hour}:{min} {meridian}')
