@@ -3,7 +3,7 @@ Exercise 14
 """
 
 
-def average(num_list: list) -> float:
+def average(num_list: list) -> None:
     """
     Calculate the average of a list of numbers.
 
