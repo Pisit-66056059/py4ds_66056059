@@ -21,6 +21,7 @@ def calc_sum(num_list):
             total.append(x)
     return sum(total)
 
+
 def calc_prod(num_list):
     """
     Calculates the product of all the numbers in the given list.
@@ -38,4 +39,3 @@ def calc_prod(num_list):
         for x in num_list:
             total = total * x
     return total
-
