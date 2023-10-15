@@ -29,7 +29,15 @@ def find_and_replace(text, old_str, new_str):
         str: The modified text with all occurrences of old_str replaced with new_str.
     """
     # Fix : complete this
-    if old_str in text:
-        return text.replace(old_str, new_str)
-    else:
-        return 'None'
+    i = 0
+    new_text = ""
+    while i < len(text):
+        if text[i:i + len(old_str)] == old_str:
+            new_text = new_text + new_str
+            i = i + len(old_str)
+        else:
+            new_text = new_text + text[i]
+            i = i + 1
+    return new_text
+
+
