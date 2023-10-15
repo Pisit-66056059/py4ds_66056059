@@ -17,12 +17,11 @@ def fizz_buzz(num):
         str or int: The result of the FizzBuzz calculation.
     """
     # Fix : complete this
-    if (num %3 == 0) & (num %5 == 0):
+    if (num % 3 == 0) & (num % 5 == 0):
         return 'FizzBuzz'
-    elif (num %3 == 0):
+    elif num % 3 == 0:
         return 'Fizz'
-    elif (num %5 == 0):
+    elif num % 5 == 0:
         return 'Buzz'
     else:
         return num
-
